@@ -1,0 +1,83 @@
+@media (max-width: 320px) {
+	body{
+		background: linear-gradient(black, blue , #0d6e5e);
+	}	
+ }
+ @media (min-width: 321px) and (max-width: 375px) {
+	body{
+		background: linear-gradient(black, blue , #6d3a77);
+	}	
+ }
+ @media (min-width: 376px) and (max-width: 425px) {
+	body{
+		background: linear-gradient(black, blue , #7c445b);
+	}	
+}
+ @media (min-width: 426px) and (max-width: 768px) {
+	body{
+		background: linear-gradient(black, blue , #6b663b);
+	}	
+}
+ @media (min-width: 769px) and (max-width: 1024px) {
+	body{
+		background: linear-gradient(black, blue , #8d7d5b);
+	}	
+}
+ @media (min-width: 1025px) { 
+	body{
+		background: linear-gradient(black, blue , #808782);
+	}	
+} 
+
+body {
+	background-color: #f0f0f0;
+	font-family: Arial, sans-serif;
+}
+
+h1 {
+	font-family: Montserrat, serif;
+	font-Size: 300%;
+	color: #00f7ff; 
+	text-align: center;
+	background: url(Loop.gif);
+	background-size: 110%;
+	border-radius: 15px;
+	padding:30px 30px;
+}
+
+h2 {
+	font-family: Montserrat, serif;
+	color: #00f7ff; 
+	text-align: left;
+	background-size: 110%;
+}
+
+li {
+	color: #b0e0e6; 
+	font-Size: 110%;
+}
+
+p {
+	color: #ffff; 
+}
+
+.center {
+	text-align: center;
+}
+
+img {
+	width: 350px;
+	height: 230px;
+}
+
+a {
+  color: #FFFD9B;
+  cursor: pointer;
+}
+
+label {
+	font-family: Montserrat, serif;
+	color: #00f7ff; 
+	text-align: left;
+	background-size: 110%;
+}

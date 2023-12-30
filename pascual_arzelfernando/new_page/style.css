@@ -1,0 +1,52 @@
+body {
+	background-color: #08094b;
+	font-family: Arial, sans-serif;
+}
+
+h1 {
+	font-family: Montserrat, serif;
+	font-Size: 300%;
+	color: #00f7ff; 
+	text-align: center;
+	background: url(../Loop.gif);
+	background-size: 110%;
+	border-radius: 15px;
+	padding:30px 30px;
+}
+
+h2 {
+	font-family: Montserrat, serif;
+	color: #00f7ff; 
+	text-align: left;
+	background-size: 110%;
+}
+
+li {
+	color: #b0e0e6; 
+	font-Size: 110%;
+}
+
+p {
+	color: #ffff; 
+}
+
+.center {
+	text-align: center;
+}
+
+img {
+	width: 350px;
+	height: 230px;
+}
+
+a {
+  color: #FFFD9B;
+  cursor: pointer;
+}
+
+label {
+	font-family: Montserrat, serif;
+	color: #00f7ff; 
+	text-align: left;
+	background-size: 110%;
+}

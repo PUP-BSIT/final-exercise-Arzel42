@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>Countries of the World</title>
+	    <link href="style.css" rel="stylesheet" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+		<div>
+        	<h1>Countries of the World</h1>
+        </div>      
+        <div class = "center">
+            <forms>
+                <label> Enter Country: </label>
+                <input 
+                    type="text"
+                    id="country_name" 
+                    placeholder="Enter a country"> 
+                <button
+                     onclick="searchCountry()">Search
+                </button>
+            </forms>
+        </div>
+        <div>
+            <div id="country_details"></div>
+            <div id="nearby_countries"></div>
+        </div>
+		<script src="new_script.js"></script>
+	</body>
+</html>
