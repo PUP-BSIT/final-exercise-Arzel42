@@ -1,3 +1,53 @@
+function search() {
+    removeHighlight();
+
+    var searchInput = document.getElementById("searchInput").
+		value.toLowerCase();
+
+    function wrapTextNodes(node) {
+        if (node.nodeType !== Node.TEXT_NODE) {
+            node.childNodes.forEach(childNode => wrapTextNodes(childNode));
+            return;
+        }
+
+        var text = node.nodeValue;
+        var replacedText = text.replace(new RegExp(searchInput, 'gi'), 
+			match => `<span class="highlight">${match}</span>`);
+        if (replacedText !== text) {
+            var span = document.createElement('span');
+            span.innerHTML = replacedText;
+            node.parentNode.replaceChild(span, node);
+        }
+    }
+
+    wrapTextNodes(document.body);
+}
+
+function removeHighlight() {
+    var highlightedElements = document.querySelectorAll('.highlight');
+    highlightedElements.forEach(element => {
+        var parent = element.parentNode;
+        parent.replaceChild(document.createTextNode(element.textContent), 
+			element);
+    });
+}
+
+function scrollToContent() {
+    var contentSection = document.getElementById('content');
+    contentSection.scrollIntoView({ behavior: 'smooth' });
+}
+
+window.addEventListener('scroll', function () {
+  var navbar = document.querySelector('.navbar');
+  var welcomeHeader = document.querySelector('.welcome-header');
+  
+  if (window.scrollY > welcomeHeader.offsetHeight) {
+    navbar.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+  } else {
+    navbar.style.backgroundColor = 'rgba(0, 0, 0, 0)';
+  }
+});
+
 let comments = [];
 
 function displayComments() {
